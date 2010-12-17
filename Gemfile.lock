@@ -34,6 +34,7 @@ GEM
       activemodel (= 3.0.3)
       activesupport (= 3.0.3)
     activesupport (3.0.3)
+    annotate-models (1.0.4)
     arel (2.0.6)
     autotest-rails (4.1.0)
       ZenTest
@@ -97,6 +98,7 @@ PLATFORMS
 
 DEPENDENCIES
   ZenTest
+  annotate-models (= 1.0.4)
   autotest-rails
   rails (= 3.0.3)
   rspec (= 2.3.0)
