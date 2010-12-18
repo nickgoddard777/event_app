@@ -1,0 +1,21 @@
+	<%= render 'shared/error_messages' %>
+	<div class="field">
+		<%= e.label :title %><br />
+		<%= e.text_field :title %>
+	</div>
+	<div class="field">
+		<%= e.label :description %><br />
+		<%= e.text_area :description %>
+	</div>
+	<div class="field">
+		<%= e.label :start_date %><br />
+		<%= e.text_field :start_date %>
+	</div>
+	<div class="field">
+		<%= e.label :end_date %><br />
+		<%= e.text_field :end_date %>
+	</div>
+	<div class="field">
+		<%= e.label :link_url %><br />
+		<%= e.url_field :link_url %>
+	</div>

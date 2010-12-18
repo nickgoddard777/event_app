@@ -1,0 +1,8 @@
+<h1>New Event</h1>
+
+<%= form_for(@event) do |e| %>
+	<%= render 'fields', :e => e %>
+	<div class="actions">
+		<%= e.submit "Create" %>
+	</div>
+<% end %>
