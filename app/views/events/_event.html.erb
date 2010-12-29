@@ -4,4 +4,7 @@
 	<%= event.start_date %>
 	<%= event.end_date %>
 	<%= event.link_url %>
+	<% if admin_signed_in? %>
+		<%= link_to "Edit", edit_event_path(event.id) %>
+	<% end %>
 </li>

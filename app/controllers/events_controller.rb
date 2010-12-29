@@ -1,4 +1,5 @@
 class EventsController < ApplicationController
+	before_filter :authenticate_admin!, :except => [:show, :index]
 	
 	def index
 		@title = "All Events"

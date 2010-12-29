@@ -141,6 +141,13 @@
 			<span class="bio">Inspirational Gatherings are a company that create spaces where you can dream, explore and discover your potential...... It was founded by Ellen Wray and Lisa Vickerage.</span>
 
 		</address><!-- /#about -->
+		<div id="admin-nav">
+			<% if admin_signed_in? %>
+				Signed in as <%= current_admin.email %>.  <%= link_to "Sign out", destroy_admin_session_path %>
+			<% else %>
+				<%= link_to "Administration", new_admin_session_path %>
+			<% end %>
+		</div>
 		<p>2010 <%= link_to "Inspirational Gatherings", '/' %>.</p>
 	</footer><!-- /#contentinfo -->
 

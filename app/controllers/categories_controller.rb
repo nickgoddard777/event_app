@@ -1,4 +1,6 @@
 class CategoriesController < ApplicationController
+	before_filter :authenticate_admin!, :except => [:show, :index]
+	
 	def index
 		@title = "All Categories"
 		@categories = Category.paginate(:page => params[:page])

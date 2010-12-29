@@ -6,4 +6,7 @@
 		<%= render @events %>
 	</ul>
 	<%= will_paginate @events %>
+	<% if admin_signed_in? %>
+		<%= link_to "Edit", edit_category_path(category.id) %>
+	<% end %>
 <% end %>
