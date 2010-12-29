@@ -9,6 +9,7 @@ gem 'rails', '3.0.3'
 gem 'ZenTest'
 gem 'autotest-rails'
 gem 'will_paginate', '3.0.pre2'
+gem 'devise'
 
 group :development, :test do
 	gem 'sqlite3-ruby', '1.3.2', :require => 'sqlite3'
