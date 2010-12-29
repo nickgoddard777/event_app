@@ -7,9 +7,7 @@ describe EventsController do
 
 		before(:each) do
 			@event = Factory(:event)
-			second = Factory(:event)
-			third  = Factory(:event)
-			@events = [@event, second, third]
+			@events = [@event]
 			30.times do
 				@events << Factory(:event)
 			end

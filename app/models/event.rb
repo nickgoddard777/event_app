@@ -14,12 +14,13 @@
 #
 
 class Event < ActiveRecord::Base
-	attr_accessible :title, :description, :start_date, :end_date, :link_url
+	attr_accessible :title, :description, :start_date, :end_date, :link_url, :category_id
+	
+	belongs_to :category
 	
 	url_regex = /^(http|https)(:\/\/)[a-z0-9]+([-.]{1}[a-z0-9]+)*/i
 	
 	validates	:title,			:presence => true
-	
 	
 	validates	:description,	:presence => true
 	

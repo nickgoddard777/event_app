@@ -2,11 +2,12 @@ require 'spec_helper'
 
 describe Event do
 	before (:each) do
+		@category = Factory(:category)
 		@attr = { :title => "Test Event", :description => "This a description of a test event", :start_date => "29/05/2011", :end_date => "31/05/2011", :link_url => "http://www.testevent.co.uk"}
 	end
 	
 	it "should create a new instance given valid attributes" do
-		Event.create!(@attr)
+		@category.events.create!(@attr)
 	end
 	
 	it "should require a title" do
@@ -42,6 +43,21 @@ describe Event do
 		urls.each do |url|
 			valid_url_event = Event.new(@attr.merge(:link_url => url))
 			valid_url_event.should_not be_valid
+		end
+	end
+	
+	describe "category associations" do
+		before(:each) do
+			@event = @category.events.create(@attr)
+		end
+		
+		it "should have a category attribute" do
+			@event.should respond_to(:category)
+		end
+		
+		it "should have the right associated category" do
+			@event.category_id.should == @category.id
+			@event.category.should  == @category
 		end
 	end
 end

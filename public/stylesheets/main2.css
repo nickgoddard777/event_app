@@ -130,6 +130,47 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	-webkit-border-bottom-left-radius: 5px;
 }
 
+/* position and hide drop-down menu */
+
+#banner nav li.topitem ul{
+	display: none;
+	position: absolute;
+	top: 22px;
+	left: 0;
+	width: 150px;
+	background: #fff;
+	padding: 0px;
+	border-bottom: 1px solid #ccc;
+}
+
+#banner nav li > ul{
+	top: auto;
+	left: auto;
+}
+
+/* display drop-down menu (add an 'over' class attribute to list items for IE */
+
+#banner nav li:hover ul,#banner nav li.over ul{
+	display: block;
+}
+
+#banner nav li li a {
+	display: block;
+	font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+	color: #000;
+	padding: 5px;
+	height: 15px;
+	text-decoration: none;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+#banner nav li li a:hover {
+	color: #000;
+	background: #eee;
+}
+
 /*
 	Body
 *****************/

@@ -19,11 +19,19 @@
 		<h1><%= link_to "Inspirational Gatherings", '/' %></h1>
 
 		<nav><ul>
-			<li><%= link_to "Home", '/' %></li>
-			<li><%= link_to "Events", '/events' %></li>
-			<li><%= link_to "About Us", '/about' %></li>
-			<li><a href="#">Blog</a></li>
-			<li><%= link_to "Contact Us", '/contact' %></li>
+			<li class="topitem"><%= link_to "Home", '/' %></li>
+			<li class="topitem"><%= link_to "Events", '/events' %>
+				<ul>
+					<% cache 'all_categories' do %>
+					<% for category in Category.all %>
+						<li><%= link_to h(category.name), category %></li>
+					<% end %>
+					<% end %>
+				</ul>
+			</li>
+			<li class="topitem"><%= link_to "About Us", '/about' %></li>
+			<li class="topitem"><a href="#">Blog</a></li>
+			<li class="topitem"><%= link_to "Contact Us", '/contact' %></li>
 		</ul></nav>
 
 	</header><!-- /#banner -->

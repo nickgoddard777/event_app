@@ -19,3 +19,7 @@
 		<%= e.label :link_url %><br />
 		<%= e.url_field :link_url %>
 	</div>
+	<div class="field">
+		<%= e.label :category_id, "Category"%>
+		<%= e.collection_select :category_id, Category.find(:all), :id, :name %>
+	</div>

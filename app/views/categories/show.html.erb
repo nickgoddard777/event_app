@@ -1,0 +1,9 @@
+<h1><%= @category.name %></h1>
+<p><%= @category.description %></p>
+
+<% unless @category.events.empty? %>
+	<ul class="events">
+		<%= render @events %>
+	</ul>
+	<%= will_paginate @events %>
+<% end %>
