@@ -11,3 +11,14 @@ Factory.define :category do |category|
 	category.sequence(:name)	{ |n| "Category#{n}" }
 	category.description		"This is a test category"
 end
+
+Factory.define	:admin	do |admin|
+	admin.email		"test.user@user.com"
+	admin.password	"secret"
+end
+
+Factory.define :page do |page|
+	page.title		"Home"
+	page.body		"This is a test home page"
+	page.page		"home"
+end
