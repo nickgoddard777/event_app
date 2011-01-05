@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101229130526) do
+ActiveRecord::Schema.define(:version => 20110104222930) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                               :default => "", :null => false
@@ -50,5 +50,15 @@ ActiveRecord::Schema.define(:version => 20101229130526) do
   end
 
   add_index "events", ["category_id"], :name => "index_events_on_category_id"
+
+  create_table "pages", :force => true do |t|
+    t.string   "title"
+    t.string   "page_type"
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "pages", ["page_type"], :name => "index_pages_on_page_type", :unique => true
 
 end

@@ -20,5 +20,5 @@ end
 Factory.define :page do |page|
 	page.title		"Home"
 	page.body		"This is a test home page"
-	page.page		"home"
+	page.page_type	"home"
 end

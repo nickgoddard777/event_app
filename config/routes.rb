@@ -1,8 +1,17 @@
 EventsApp::Application.routes.draw do
-  devise_for :admins
+	
+	match 'home' 				=> 'pages#home'
+	match 'contact'				=> 'pages#contact'
+	match 'about'				=> 'pages#about'
+	match 'about/lisavicarage'	=> 'pages#lisavickerage'
+	match 'about/ellenwray'		=> 'pages#ellenwray'
+
+	devise_for :admins
 
 	resources :categories
 	resources :events
+	resources :pages
+	
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -52,7 +61,7 @@ EventsApp::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => "welcome#index"
+   root :to => "pages#home"
 
   # See how all your routes lay out with "rake routes"
 

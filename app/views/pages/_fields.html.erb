@@ -1,0 +1,13 @@
+	<%= render 'shared/page_error_messages' %>
+	<div class="field">
+		<%= p.label :title %><br />
+		<%= p.text_field :title %>
+	</div>
+	<div class="field">
+		<%= p.label :page_type %><br />
+		<%= p.text_field :page_type, :cols => "50", :rows=>"3", :class=>"widgEditor" %>
+	</div>
+	<div class="field">
+		<%= p.label :body %><br />
+		<%= p.text_area :body %>
+	</div>

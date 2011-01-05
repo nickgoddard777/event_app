@@ -1,0 +1,11 @@
+<h1>Pages</h1>
+
+
+<ul class="pages">
+	<%= render @pages %>
+</ul>
+
+
+<% if admin_signed_in? %>
+	<%= link_to "New", new_page_path %>
+<% end %>

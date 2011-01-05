@@ -1,0 +1,8 @@
+<h1>Edit page</h1>
+
+<%= form_for(@page) do |p| %>
+	<%= render 'fields', :p => p %>
+	<div class="actions">
+		<%= p.submit "Update" %>
+	</div>
+<% end %>

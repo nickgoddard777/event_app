@@ -1,0 +1,8 @@
+<h1><%= @page.title %></h1>
+<p><%= @page.body %></p>
+
+<% if admin_signed_in? %>
+	<p><%= @page.page_type %></p>
+	<%= link_to "Edit", edit_page_path(@page.id) %>
+<% end %>
+
