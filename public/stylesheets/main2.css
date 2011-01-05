@@ -9,7 +9,7 @@
 		font-family: 'Century Gothic', sans-serif;
 		font-size: 87.5%;
 		background: #FFF;
-		color: #000;
+		color: #0D0D0D;
 		line-height: 1.429;
 		margin: 0;
 		padding: 0;
@@ -20,15 +20,14 @@
 a {outline: 0;}
 a img {border: 0px; text-decoration: none;}
 a:link, a:visited {
-	color: #C988B7;
+	color: #6E3DD9;
 	padding: 0 1px;
 	text-decoration: underline;
 }
 a:hover, a:active {
-	background-color: #C988B7;
-	color: #fff;
+	/* background-color: #C988B7;*/
+	color: #F257D8;
 	text-decoration: none;
-	text-shadow: 1px 1px 1px #333;
 }
 
 /* Tables */
@@ -72,7 +71,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	/* Banner */
 	#banner h1 {font-size: 3.571em; line-height: .6;}
 	#banner h1 a:link, #banner h1 a:visited {
-		color: #C988B7;
+		color: #6E3DD9;
 		display: block;
 		font-weight: bold;
 		margin: 0 0 .6em .2em;
@@ -81,7 +80,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	}
 	#banner h1 a:hover, #banner h1 a:active {
 		background: none;
-		color: #8ACC92;
+		color: #F257D8;
 		text-shadow: none;
 	}
 
@@ -89,7 +88,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 
 /* Main Nav */
 #banner nav {
-	background: #8C7E93;
+	background: #6E3DD9;
 	font-size: 1.143em;
 	height: 40px;
 	line-height: 30px;
@@ -107,7 +106,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 #banner nav li {float: left; display: inline; margin: 0;}
 
 #banner nav a:link, #banner nav a:visited {
-	color: #C69B47;
+	color: #0D7AD9;
 	display: inline-block;
 	height: 30px;
 	padding: 5px 1.5em;
@@ -115,8 +114,8 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 }
 #banner nav a:hover, #banner nav a:active,
 #banner nav .active a:link, #banner nav .active a:visited {
-	background: #8272F9;
-	color: #C69B47;
+	background: #F257D8;
+	color: #0D7AD9;
 	text-shadow: none !important;
 }
 
@@ -157,7 +156,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 #banner nav li li a {
 	display: block;
 	font: normal 11px Verdana, Arial, Helvetica, sans-serif;
-	color: #000;
+	color: #0D0D0D;
 	padding: 5px;
 	height: 15px;
 	text-decoration: none;
@@ -167,7 +166,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 }
 
 #banner nav li li a:hover {
-	color: #000;
+	color: #0D0D0D;
 	background: #eee;
 }
 
@@ -175,7 +174,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	Body
 *****************/
 #content {
-	background: #FAE9B1;
+	background: #8372F2;
 	margin-bottom: 2em;
 	overflow: hidden;
 	padding: 20px 20px;
@@ -195,7 +194,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 #extras ul {list-style: none; margin: 0;}
 #extras li {border-bottom: 1px solid #FAE9B1;}
 #extras h2 {
-	color: #C988B7;
+	color: #6E3DD9;
 	font-size: 1.429em;
 	margin-bottom: .25em;
 	padding: 0 3px;
@@ -204,7 +203,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 #extras a:link, #extras a:visited {
 	color: #444;
 	display: block;
-	border-bottom: 1px solid #F4E3E3;
+	border-bottom: 1px solid #6E3DD9;
 	text-decoration: none;
 	padding: .3em .25em;
 }
@@ -278,7 +277,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	About
 *****************/
 #about {
-	background: #FAE9B1;
+	background: #8372F2;
 	font-style: normal;
 	margin-bottom: 2em;
 	overflow: hidden;
@@ -292,7 +291,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 }
 
 #about .primary {float: left; width: 165px;}
-#about .primary strong {color: #C64350; display: block; font-size: 1.286em;}
+#about .primary strong {color: #6E3DD9; display: block; font-size: 1.286em;}
 #about .photo {float: left; margin: 5px ;}
 
 #about .url:link, #about .url:visited {text-decoration: none;}

@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-	before_filter :authenticate_admin!, :except => [:show]
+	before_filter :authenticate_admin!, :except => [:show, :home, :contact, :about, :lisavickerage, :ellenwray]
 	
 	def index
 		@title = "All Pages"
